@@ -36,7 +36,7 @@ Terminus needs to be authenticated in order to execute most commands. Before run
 
 ## Bash Variables
 
-One of the ways Terminus can be used in script is the generation of environment variables. In the example below, we use the output of `terminus multidev:list` to create an environment variable with all our multidev environments:
+One of the ways Terminus can be used in scripting is the generation of variables. In the example below, we use the output of `terminus multidev:list` to create an environment variable with all our multidev environments:
 
 ```bash
 PANTHEON_MULTIDEV_LIST="$(terminus multidev:list -n ${TERMINUS_SITE} --format=list --field=Name)"
